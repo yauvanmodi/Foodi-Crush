@@ -1,0 +1,38 @@
+.navigation-manu{
+    list-style: none;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-manu li{
+    margin: 0px 20px;
+}
+.navigation-manu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.navigation-manu li a:hover{
+    color: yellow;
+}
+
+
+.mobile-navigation{
+    list-style: none;
+    
+}
+
+.mobile-navigation li {
+    margin-top: 23px;
+}
+
+.mobile-navigation li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.mobile-navigation li a:hover{
+    color: yellow;
+}
