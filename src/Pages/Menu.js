@@ -8,7 +8,7 @@ const Menu = () => {
     <>
      <Box  sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
       {
-      MenuList.map(menu=>(
+      MenuList.map((menu) =>(
         <Card sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
           <CardActionArea>   
             <CardMedia sx={{minHeight:"400px"}} component={"img"} src={menu.image} alt={menu.name}/>
@@ -19,9 +19,9 @@ const Menu = () => {
               <Typography variant='body2' >
                 {menu.description}
               </Typography>
-              <Typography variant='body2'>
+              {/* <Typography variant='body2'>
                 {menu.price}
-              </Typography>
+              </Typography> */}
             </CardContent>
           </CardActionArea>
         </Card>

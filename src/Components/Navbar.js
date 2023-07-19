@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {Box,AppBar,Typography,Toolbar,IconButton,Drawer, Divider} from "@mui/material"
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import MenuIcon from '@mui/icons-material/Menu';
+import {  NavLink } from 'react-router-dom';
 import  '../Styles/Navbarstyle.css'
 const Navbar = () => {
   const [mobileopen, setMobileopen] = useState(false);
@@ -20,16 +21,16 @@ const Navbar = () => {
          
             <ul className='mobile-navigation'>
             <li>
-                <a href ="/">Home</a>
+                <NavLink activeclassname="active" to ="/">Home</NavLink>
               </li>
               <li>
-                <a href ="/about">About</a>
+                <NavLink to ="/about">About</NavLink>
               </li>
               <li>
-                <a href ="/menu">Menu</a>
+                <NavLink to ="/menu">Menu</NavLink>
               </li>
               <li>
-                <a href ="/contact">Contact</a>
+                <NavLink to ="/contact">Contact</NavLink>
               </li>
             </ul>
     </Box>
@@ -54,16 +55,16 @@ const Navbar = () => {
           <Box sx={{display: {xs:"none",sm:"block"}}}>
             <ul className='navigation-manu'>
               <li>
-                <a href ="/">Home</a>
+                <NavLink activeclassname="active" to ="/">Home</NavLink>
               </li>
               <li> 
-                <a href ="/about">About</a>
+                <NavLink to ="/about">About</NavLink>
               </li>
               <li>
-              <a href ="/menu">Menu</a>
+              <NavLink to ="/menu">Menu</NavLink>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
           </Box>

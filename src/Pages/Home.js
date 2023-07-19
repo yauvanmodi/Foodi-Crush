@@ -2,6 +2,7 @@ import React from 'react'
 import {Box} from '@mui/material'
 import Banner from '../image/Banner.jpg'
 import '../Styles/Homestyle.css'
+import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <>
@@ -9,9 +10,9 @@ const Home = () => {
       <Box className="navcontainer">
       <h1>FOODI-CRUSH</h1>  
       <p>Best Food Of  My Foodi-Zoon</p>
-      <a href ="/Menu">
+      <Link to ="/Menu">
       <button> ODER NOW</button>
-      </a>
+      </Link>
       </Box>
      </Box>
       
